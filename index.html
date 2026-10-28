@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Nederlands voor beginners</title>
+<style>
+:root{--bg:#f3f6fc;--card:#fff;--ink:#14213d;--mute:#59658a;--line:#d9e0f0;--blue:#254aa5;--on:#fff;--ok:#17703a;--okb:#e2f4e9;--ko:#b3261e;--kob:#fbe8e6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0d1325;--card:#171f38;--ink:#e9edf9;--mute:#9ba7c6;--line:#29345a;--blue:#2d54c4;--ok:#7ee09b;--okb:#15301f;--ko:#ff9a90;--kob:#3a1d1b}}
+:root[data-theme=dark]{--bg:#0d1325;--card:#171f38;--ink:#e9edf9;--mute:#9ba7c6;--line:#29345a;--blue:#2d54c4;--ok:#7ee09b;--okb:#15301f;--ko:#ff9a90;--kob:#3a1d1b}
+*{box-sizing:border-box}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding-bottom:92px;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--blue);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;color:#fff;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;background:var(--blue) radial-gradient(circle at 12px 12px,rgba(255,255,255,.17) 3px,transparent 4px) 0 0/24px 24px}
+header h1{margin:0;font:italic 600 21px Georgia,"Iowan Old Style",serif}
+#sc{font-size:14px;display:flex;gap:12px}
+main{max-width:680px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.lab{margin:0 0 6px;color:var(--mute);font-size:14px}
+.big{font:600 30px/1.25 Georgia,"Iowan Old Style",serif;overflow-wrap:anywhere}
+.sub{margin:4px 0 14px;color:var(--mute)}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.spk{border:0;background:none;font-size:22px;padding:0 8px;vertical-align:middle}
+.opts{display:grid;gap:10px;margin-top:16px}
+.opt{min-height:50px;text-align:left;padding:12px 16px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg)}
+.opt:active,.chip:active{transform:scale(.98)}
+.good{border-color:var(--ok)!important;background:var(--okb)!important;color:var(--ok)}
+.bad{border-color:var(--ko)!important;background:var(--kob)!important;color:var(--ko)}
+.fl{display:block;margin-top:12px;color:var(--mute);font-size:14px}
+input{display:block;width:100%;margin-top:4px;min-height:50px;padding:10px 14px;font-size:18px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink)}
+input:focus,button:focus-visible{outline:3px solid var(--blue);outline-offset:1px}
+.pri{margin-top:16px;width:100%;min-height:50px;border:0;border-radius:12px;background:var(--blue);color:#fff;font-weight:600}
+.tiles,.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.chips{margin:0 0 14px}
+.chip{min-height:40px;padding:6px 14px;border-radius:20px;border:1.5px solid var(--line);background:var(--card)}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.ghost{margin-top:12px;border:0;background:none;color:var(--blue);padding:6px 0;font-weight:600}
+.fb{margin-top:16px;padding:14px 16px;border-radius:12px;border:1.5px solid}
+.fb p{margin:6px 0 0;color:var(--ink)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:2px 16px}
+summary{min-height:48px;display:flex;align-items:center;font-weight:600;cursor:pointer}
+details div{padding-bottom:14px}
+details p{margin:0 0 8px}
+em{font-family:Georgia,serif;font-size:1.05em}
+nav{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--card);border-top:1px solid var(--line);padding:6px 4px env(safe-area-inset-bottom,0px)}
+nav button{flex:1;min-height:52px;border:0;background:none;font-size:12px;color:var(--mute);border-radius:10px}
+nav button.on{color:var(--blue);font-weight:700}
+nav b{display:block;font-size:20px;line-height:1.2}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><h1>Nederlands voor beginners</h1><div id="sc"></div></header>
+<main id="v"></main>
+<nav>
+<button data-m="regles"><b>📘</b>Règles</button>
+<button data-m="mots"><b>🧩</b>Mots</button>
+<button data-m="gram"><b>✏️</b>Grammaire</button>
+<button data-m="temps"><b>⏳</b>Temps</button>
+<button data-m="lire"><b>👀</b>Lire</button>
+<button data-m="ecrire"><b>⌨️</b>Écrire</button>
+</nav>
+<script>
+const $=s=>document.querySelector(s),R=a=>a[Math.random()*a.length|0],sh=a=>a.map(x=>[Math.random(),x]).sort((p,r)=>p[0]-r[0]).map(x=>x[1]),cap=s=>s[0].toUpperCase()+s.slice(1),
+norm=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’]/g,"'").replace(/[.,!?;:]/g,'').replace(/\s+/g,' ').trim();
+
+/* ---------- Données ---------- */
+const N={};
+'brood|het|broden|pain|m;appel|de|appels|pomme|f;kaas|de||fromage|m;vis|de|vissen|poisson|m;water|het||eau|f;melk|de||lait|m;koffie|de||café|m;thee|de||thé|m;boek|het|boeken|livre|m;brief|de|brieven|lettre|f;krant|de|kranten|journal|m;huis|het|huizen|maison|f;fiets|de|fietsen|vélo|m;auto|de|auto\'s|voiture|f;hond|de|honden|chien|m;kat|de|katten|chat|m;tafel|de|tafels|table|f;film|de|films|film|m;muziek|de||musique|f;man|de|mannen|homme|m;vrouw|de|vrouwen|femme|f;kind|het|kinderen|enfant|m;jongen|de|jongens|garçon|m;meisje|het|meisjes|fille|f'
+.split(';').forEach(s=>{const[nl,a,pl,fr,g]=s.split('|');N[nl]={nl,a,pl,fr,g}});
+const NK=Object.keys(N),fa=n=>/^[aeiouéh]/.test(n.fr)?"l'"+n.fr:(n.g=='m'?'le ':'la ')+n.fr;
+const fill=v=>{if(!v.sp){const k=/[tkfschpx]$/.test(v.s);v.k=k;v.weak=1;v.sp=v.s+(k?'te':'de');v.spl=v.sp+'n';v.pp='ge'+v.s+(/[td]$/.test(v.s)?'':k?'t':'d')}return v};
+const V='eten|eet|at|aten|gegeten|manger|mange,manges,mange,mangeons,mangez,mangent,mangé|brood,appel,kaas,vis;drinken|drink|dronk|dronken|gedronken|boire|bois,bois,boit,buvons,buvez,boivent,bu|water,melk,koffie,thee;lezen|lees|las|lazen|gelezen|lire|lis,lis,lit,lisons,lisez,lisent,lu|boek,brief,krant;schrijven|schrijf|schreef|schreven|geschreven|écrire|écris,écris,écrit,écrivons,écrivez,écrivent,écrit|brief,boek;zien|zie|zag|zagen|gezien|voir|vois,vois,voit,voyons,voyez,voient,vu|hond,kat,huis,auto,film;kopen|koop|kocht|kochten|gekocht|acheter|achète,achètes,achète,achetons,achetez,achètent,acheté|brood,boek,fiets,auto,appel,krant;maken|maak||||faire|fais,fais,fait,faisons,faites,font,fait|brood,tafel,film;horen|hoor||||entendre|entends,entends,entend,entendons,entendez,entendent,entendu|muziek,hond,kat;zoeken|zoek||||chercher|cherche,cherches,cherche,cherchons,cherchez,cherchent,cherché|boek,kat,hond,fiets,huis;bouwen|bouw||||construire|construis,construis,construit,construisons,construisez,construisent,construit|huis,tafel'
+.split(';').map(s=>{const[i,st,sp,spl,pp,fr,f,o]=s.split('|');return fill({i,s:st,sp,spl,pp,aux:'h',fr,f:f.split(','),o:o.split(',')})});
+const W='werken|werk|travailler;wonen|woon|habiter;leren|leer|apprendre;spelen|speel|jouer;koken|kook|cuire;wachten|wacht|attendre;praten|praat|parler;fietsen|fiets|faire du vélo'
+.split(';').map(s=>{const[i,st,fr]=s.split('|');return fill({i,s:st,sp:'',aux:'h',fr})});
+const S='gaan|ga|ging|gingen|gegaan|z|aller;komen|kom|kwam|kwamen|gekomen|z|venir;geven|geef|gaf|gaven|gegeven|h|donner;nemen|neem|nam|namen|genomen|h|prendre;vinden|vind|vond|vonden|gevonden|h|trouver;spreken|spreek|sprak|spraken|gesproken|h|parler;staan|sta|stond|stonden|gestaan|h|être debout;zitten|zit|zat|zaten|gezeten|h|être assis;slapen|slaap|sliep|sliepen|geslapen|h|dormir;helpen|help|hielp|hielpen|geholpen|h|aider;brengen|breng|bracht|brachten|gebracht|h|apporter;denken|denk|dacht|dachten|gedacht|h|penser;blijven|blijf|bleef|bleven|gebleven|z|rester;zwemmen|zwem|zwom|zwommen|gezwommen|h|nager;beginnen|begin|begon|begonnen|begonnen|z|commencer;doen|doe|deed|deden|gedaan|h|faire;weten|weet|wist|wisten|geweten|h|savoir'
+.split(';').map(s=>{const[i,st,sp,spl,pp,aux,fr]=s.split('|');return{i,s:st,sp,spl,pp,aux,fr}});
+const P=[...V,...W,...S];
+const IRR={zijn:['ben','bent','is','zijn'],hebben:['heb','hebt','heeft','hebben']},CI={s1:0,s2:1,s3:2,p:3};
+const SP=[['ik','je','s1',0],['jij','tu','s2',1],['hij','il','s3',2],['zij','elle','s3',2],['wij','nous','p',3],['jullie','vous','p',4],['zij','ils','p',5]];
+const SN=['man','vrouw','kind','jongen','meisje','hond','kat'];
+const OT='ja=oui;nee=non;hallo=bonjour;goedemorgen=bonjour (le matin);dank je=merci;alsjeblieft=s\'il te plaît;tot ziens=au revoir;groot=grand;klein=petit;mooi=beau;oud=vieux;nieuw=nouveau;lekker=délicieux;snel=rapide;rood=rouge;blauw=bleu;groen=vert;geel=jaune;zwart=noir;wit=blanc;een=un;twee=deux;drie=trois;vier=quatre;vijf=cinq;zes=six;zeven=sept;acht=huit;negen=neuf;tien=dix;vader=père;moeder=mère;broer=frère;zus=sœur;vriend=ami;school=école;stad=ville;winkel=magasin;vandaag=aujourd\'hui;gisteren=hier;morgen=demain;altijd=toujours;nooit=jamais;ook=aussi;maar=mais;want=car;omdat=parce que'.split(';').map(s=>{const[nl,fr]=s.split('=');return{nl,b:nl,fr,c:'m'}});
+const VP=[...NK.map(k=>({nl:N[k].a+' '+N[k].nl,b:k,fr:fa(N[k]),c:'n'})),...P.map(v=>({nl:v.i,b:v.i,fr:v.fr,c:'v'})),...OT];
+
+/* ---------- Générateur de phrases ---------- */
+const ts=x=>/t$/.test(x)?x:x+'t',pf=(v,c,inv)=>c=='s1'?v.s:c=='s2'?(inv?v.s:ts(v.s)):c=='s3'?ts(v.s):v.i;
+function mkSubj(){if(Math.random()<.6){const p=R(SP);return{nl:p[0],fr:p[1],cl:p[2],fi:p[3]}}const n=N[R(SN)];
+ return Math.random()<.7?{nl:n.a+' '+n.nl,fr:fa(n),cl:'s3',fi:2}:{nl:'de '+n.pl,fr:'les '+n.fr+'s',cl:'p',fi:5}}
+function build(o){const{s,v,ob,t,adv}=o,inv=adv&&s.nl=='jij',O=N[ob];let fin,end='';
+ if(t=='pres')fin=pf(v,s.cl,inv);else if(t=='past')fin=s.cl=='p'?v.spl:v.sp;else{fin=inv&&s.cl=='s2'?'heb':IRR.hebben[CI[s.cl]];end=v.pp}
+ const aw=t=='pres'?['vandaag',"aujourd'hui"]:['gisteren','hier'],on=O.a+' '+O.nl;
+ const w=(adv?[aw[0],fin,s.nl,on,end]:[s.nl,fin,on,end]).filter(Boolean);
+ const fv=t=='pres'?v.f[s.fi]:['ai','as','a','avons','avez','ont'][s.fi]+' '+v.f[6];
+ let f=(s.fr=='je'&&/^[aeiouéh]/.test(fv)?"j'"+fv:s.fr+' '+fv)+' '+fa(O);
+ return{nl:cap(w.join(' '))+'.',fr:(adv?cap(aw[1])+', '+f:cap(f))+'.',w:w.map(x=>x.toLowerCase())}}
+const spec=()=>{const v=R(V);return{s:mkSubj(),v,ob:R(v.o),t:R(['pres','past','perf']),adv:Math.random()<.45}};
+const alts=o=>(o.t=='pres'?[o]:['past','perf'].map(t=>({...o,t}))).map(build);
+
+/* ---------- Exercices ---------- */
+function vq(){const e=R(VP);
+ if(Math.random()<.5){const o=sh(VP.filter(x=>x.c==e.c&&x.fr!=e.fr)).slice(0,3).map(x=>x.fr);
+  return{k:'mc',p:'Traduis en français',big:e.nl,say:e.nl,opts:sh([e.fr,...o]),ans:e.fr,ex:`${e.nl} = ${e.fr}`}}
+ return{k:'text',p:'Écris en néerlandais',big:e.fr,ans:[e.nl,e.b],ex:`${e.fr} = ${e.nl}`+(e.c=='n'?' (retiens l’article !)':'')}}
+const GG={
+ art:()=>{const n=N[R(NK)];return{k:'mc',p:'de ou het ?',big:n.nl,sub:n.fr,opts:['de','het'],ans:n.a,ex:`${n.a} ${n.nl}`+(/je$/.test(n.nl)?' : les diminutifs en -je sont toujours het.':' : à mémoriser avec le mot.')}},
+ plu:()=>{const n=N[R(NK.filter(k=>N[k].pl))];return{k:'text',p:'Écris le pluriel',big:n.a+' '+n.nl,sub:n.fr,ans:[n.pl,'de '+n.pl],ex:`de ${n.pl}. Terminaisons : -en (hond → honden), -s (après -el, -er, -je), 's (après voyelle : auto's).`}},
+ pres:()=>{const p=R(SP),adv=Math.random()<.4,inv=adv&&p[0]=='jij',ir=Math.random()<.2,v=ir?{i:R(['zijn','hebben'])}:R(P),c=p[2],
+  a=ir?(inv&&c=='s2'?IRR[v.i][0]:IRR[v.i][CI[c]]):pf(v,c,inv);
+  return{k:'text',p:'Complète au présent',big:adv?`Vandaag ___ ${p[0]}`:`${cap(p[0])} ___`,sub:v.i+(v.fr?` (${v.fr})`:''),ans:[a],ex:`${adv?'Vandaag '+a+' '+p[0]:cap(p[0])+' '+a}. `+(inv&&c=='s2'?'Après inversion, jij perd son -t.':c=='p'?'Au pluriel : forme de l’infinitif.':'Radical'+(c=='s1'?'.':' + t.'))}},
+ aux:()=>{const v=R(P),p=R(SP.slice(0,5)),i=CI[p[2]],z=IRR.zijn[i],h=IRR.hebben[i],a=v.aux=='z'?z:h;
+  return{k:'mc',p:'Hebben ou zijn ?',big:`${cap(p[0])} ___ ${v.pp}`,sub:`${v.i} (${v.fr})`,opts:sh([z,h]),ans:a,ex:`${cap(p[0])} ${a} ${v.pp}. `+(v.aux=='z'?'zijn : déplacement ou changement d’état.':'hebben : le cas le plus fréquent.')}},
+ ord:()=>{const o={...spec(),adv:true,t:R(['pres','past'])},a=build(o);
+  return{k:'text',p:'Remets les mots dans l’ordre',big:a.fr,ans:[a.nl],tiles:sh(a.w),ex:'Le verbe conjugué reste en 2e position : après le complément de temps, le sujet passe derrière le verbe.'}}};
+const CH=[['all','Tout'],['art','Articles'],['plu','Pluriel'],['pres','Présent'],['aux','Hebben/zijn'],['ord','Ordre']];
+function tq(){const v=R(P);
+ return{k:'multi',p:'Donne les temps primitifs',big:v.i,sub:v.fr+(v.weak?' (verbe faible)':' (verbe fort)'),say:v.i,
+  f:[['imparfait : ik …',[v.sp]],['imparfait : wij …',[v.spl]],['participe passé',[v.pp]],['auxiliaire (hebben / zijn)',[v.aux=='z'?'zijn':'hebben']]],
+  ex:v.weak?`Radical « ${v.s} » : dernière lettre « ${v.s.slice(-1)} » ${v.k?'dans':'hors de'} 't kofschip → -${v.k?'te':'de'}. Participe : ge- + radical + ${/[td]$/.test(v.s)?'rien':v.k?'t':'d'}.`:'Verbe fort : les trois formes sont à apprendre par cœur.'}}
+function rq(){const o=spec(),c=build(o),v2=R(V.filter(x=>x!=o.v)),
+ d=[...new Set([{...o,s:mkSubj()},{...o,t:o.t=='pres'?'past':'pres'},{...o,ob:R(o.v.o.filter(x=>x!=o.ob))},{...o,v:v2,ob:R(v2.o)},{...o,s:mkSubj(),t:o.t=='pres'?'past':'pres'}].map(x=>build(x).fr).filter(f=>f!=c.fr))].slice(0,3);
+ return{k:'mc',p:'Lis, puis choisis la bonne traduction',big:c.nl,say:c.nl,opts:sh([c.fr,...d]),ans:c.fr,ex:`${c.nl} = ${c.fr}`}}
+function wq(){const o=spec(),a=alts(o);
+ return{k:'text',p:'Écris la phrase en néerlandais',big:a[0].fr,sub:o.t=='pres'?'':'Imparfait ou parfait : les deux sont acceptés.',ans:a.map(x=>x.nl),tiles:sh(a[0].w),hint:1,ex:a.map(x=>x.nl).join(' / ')}}
+
+/* ---------- Règles ---------- */
+const RL=[
+['Articles',`<p><em>de</em> (masculin/féminin et tous les pluriels) et <em>het</em> (neutre). Un seul article indéfini : <em>een</em>. Les diminutifs en -je sont toujours <em>het</em> (het meisje).</p><p>Apprends chaque nom avec son article : de hond, het huis.</p>`,'gram:art'],
+['Pluriel',`<p>Le plus courant : <em>-en</em> (hond → honden). Après -el, -er, -je : <em>-s</em> (tafel → tafels). Après une voyelle : <em>'s</em> (auto → auto's).</p><p>Ajustements : huis → huizen, brief → brieven.</p>`,'gram:plu'],
+['Présent',`<p>Radical = infinitif − <em>-en</em> (werken → werk). <em>ik</em> : radical. <em>jij, hij, zij</em> : radical + t. <em>wij, jullie, zij</em> : infinitif.</p><p>Inversion : « Werk jij ? » : jij perd son -t. Irréguliers : <em>zijn</em> (ben, bent, is, zijn) et <em>hebben</em> (heb, hebt, heeft, hebben).</p>`,'gram:pres'],
+['Ordre des mots',`<p>Le verbe conjugué est en <b>2e position</b>. Après vandaag ou gisteren, le sujet passe derrière le verbe : <em>Vandaag eet de man brood.</em></p><p>Au parfait, le participe passé va à la fin : <em>Ik heb brood gegeten.</em></p>`,'gram:ord'],
+['Imparfait des verbes faibles',`<p>Radical + <em>-te(n)</em> si sa dernière lettre est dans <b>'t kofschip</b> (t, k, f, s, ch, p, x), sinon <em>-de(n)</em>. werk → werkte, woon → woonde.</p><p>Participe passé : <em>ge-</em> + radical + t ou d (gewerkt, gewoond).</p>`,'temps'],
+['Verbes forts et temps primitifs',`<p>Trois formes à retenir : infinitif, imparfait (singulier / pluriel), participe passé. Exemple : <em>eten – at / aten – gegeten</em>. La voyelle change souvent.</p>`,'temps'],
+['Hebben ou zijn',`<p><em>zijn</em> avec les verbes de déplacement ou de changement d’état (gaan, komen, blijven, beginnen). <em>hebben</em> avec presque tous les autres.</p><p>L’imparfait et le parfait néerlandais se traduisent souvent par le passé composé français.</p>`,'gram:aux']];
+const rules=()=>`<p class=sub>Lis une règle, puis entraîne-toi tout de suite.</p>`+RL.map(r=>`<details><summary>${r[0]}</summary><div>${r[1]}<button class=ghost data-go="${r[2]}">S’entraîner</button></div></details>`).join('');
+
+/* ---------- Moteur ---------- */
+let mode='regles',gsel='all',q=null,done=false,sc={ok:0,n:0,st:0};
+try{sc=JSON.parse(localStorage.getItem('nl'))||sc}catch(e){}
+const gen=()=>({mots:vq,gram:()=>gsel=='all'?R(Object.values(GG))():GG[gsel](),temps:tq,lire:rq,ecrire:wq})[mode]();
+function render(){
+ document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.m==mode));
+ $('#sc').innerHTML=`<span>✓ ${sc.ok}/${sc.n}</span><span>série ${sc.st}</span>`;
+ const v=$('#v');if(mode=='regles'){v.innerHTML=rules();return}
+ if(!q){q=gen();done=false}
+ let h=mode=='gram'?`<div class=chips>${CH.map(c=>`<button class="chip${gsel==c[0]?' on':''}" data-g=${c[0]}>${c[1]}</button>`).join('')}</div>`:'';
+ h+=`<section class=card><p class=lab>${q.p}</p><div class=big>${q.big}${q.say?'<button class=spk data-s=1 aria-label="Écouter">🔊</button>':''}</div>${q.sub?`<p class=sub>${q.sub}</p>`:''}`;
+ if(q.k=='mc')h+=`<div class=opts>${q.opts.map((o,i)=>`<button class=opt data-i=${i}>${o}</button>`).join('')}</div>`;
+ else{h+=(q.k=='multi'?q.f:[['',q.ans]]).map((f,i)=>`<label class=fl>${f[0]}<input autocapitalize=off autocorrect=off spellcheck=false autocomplete=off enterkeyhint=done></label>`).join('');
+  if(q.tiles)h+=(q.hint?'<button class=ghost id=hint>Afficher un indice</button>':'')+`<div class=tiles ${q.hint?'hidden':''}>${q.tiles.map(t=>`<button class=chip data-t="${t}">${t}</button>`).join('')}</div>`;
+  h+=`<button class=pri id=chk>Vérifier</button>`}
+ v.innerHTML=h+`<div id=fb></div></section>`;
+ const i=$('input');if(i&&matchMedia('(pointer:fine)').matches)i.focus()}
+function check(pick){if(done)return;done=true;let ok,corr='';
+ if(q.k=='mc'){ok=q.opts[pick]==q.ans;document.querySelectorAll('.opt').forEach((b,j)=>{b.disabled=true;if(q.opts[j]==q.ans)b.classList.add('good');else if(j==pick)b.classList.add('bad')})}
+ else{const ins=[...document.querySelectorAll('#v input')],fs=q.k=='multi'?q.f.map(f=>f[1]):[q.ans],
+  r=ins.map((x,j)=>fs[j].map(norm).includes(norm(x.value)));ok=r.every(Boolean);
+  ins.forEach((x,j)=>{x.disabled=true;x.classList.add(r[j]?'good':'bad')});corr=fs.map(a=>a[0]).join(' / ')}
+ sc.n++;ok?(sc.ok++,sc.st++):sc.st=0;try{localStorage.setItem('nl',JSON.stringify(sc))}catch(e){}
+ $('#sc').innerHTML=`<span>✓ ${sc.ok}/${sc.n}</span><span>série ${sc.st}</span>`;
+ const c=$('#chk');if(c)c.hidden=true;
+ $('#fb').innerHTML=`<div class="fb ${ok?'good':'bad'}"><b>${ok?'Juist !':'Pas tout à fait.'}</b>${ok||!corr?'':` Réponse : <b>${corr}</b>`}<p>${q.ex}</p></div><button class=pri id=nx>Suivant</button>`;
+ $('#nx').focus({preventScroll:true})}
+const speak=t=>{try{const u=new SpeechSynthesisUtterance(t);u.lang='nl-NL';speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}};
+$('#v').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const d=b.dataset;
+ if(d.g){gsel=d.g;q=null;render()}
+ else if(d.i!==undefined)check(+d.i);
+ else if(b.id=='chk')check();
+ else if(b.id=='nx'){q=null;render()}
+ else if(b.id=='hint'){$('.tiles').hidden=false;b.hidden=true}
+ else if(d.t){const i=$('input');i.value=(i.value+' '+d.t).trim();i.focus()}
+ else if(d.s)speak(q.say);
+ else if(d.go){const[m,g]=d.go.split(':');mode=m;if(g)gsel=g;q=null;scrollTo(0,0);render()}});
+$('#v').addEventListener('keydown',e=>{if(e.key=='Enter'&&e.target.tagName=='INPUT')done?(q=null,render()):check()});
+document.querySelector('nav').addEventListener('click',e=>{const b=e.target.closest('button');if(b){mode=b.dataset.m;q=null;scrollTo(0,0);render()}});
+render();
+</script>
+</body>
+</html>
